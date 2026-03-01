@@ -10,7 +10,7 @@
     <meta property="og:description" content="ЭНЕРГОСТРОЙ - Энергия в каждом решении, надежность в каждом проекте" />
     <title>ЭНЕРГОСТРОЙ</title>
 
-    <?php wp_head(); // Важно! Должен быть перед закрытием </head> ?>
+    <?php wp_head();  ?>
 </head>
 <body>
 
