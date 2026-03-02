@@ -5,6 +5,6 @@
 ?>
 <?php get_header('home'); ?>
 <section>
-    Главная страница
+    <h1>Главная страница</h1>
 </section>
 <?php get_footer();?>
