@@ -1,1 +1,9 @@
-/*# sourceMappingURL=front-page.css.map */
+@charset "UTF-8";
+/* подлючение иных стилей */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+section h1 {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 48px;
+  color: black;
+}/*# sourceMappingURL=front-page.css.map */
