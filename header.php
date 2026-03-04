@@ -9,9 +9,6 @@
     <meta name="keywords" content="пицца">
     <meta property="og:title" content="ЭНЕРГОСТРОЙ - Полный спектр услуг в строительстве электроэнергетической инфраструктуры" />
     <meta property="og:description" content="ЭНЕРГОСТРОЙ - Энергия в каждом решении, надежность в каждом проекте" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <title>ЭНЕРГОСТРОЙ</title>
 
     <?php wp_head();  ?>

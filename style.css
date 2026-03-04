@@ -2,8 +2,12 @@
 Theme Name: energostroy
 Author: Morin Danil
 */
-/* Подключение Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
-
 /* Подключение CSS файлов */
-@import url("wp-content/themes/energostroy/assets/css/front-page/front-page.css");
+
+
+:root {
+    --font-family: 'Oswald', sans-serif;
+}
+body{
+    font-family: 'Oswald', sans-serif;
+}
