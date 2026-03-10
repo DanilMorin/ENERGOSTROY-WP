@@ -1,0 +1,18 @@
+:root {
+    /* основыне цвета*/
+    --color-primary: #fff;
+    --color-secondary: #c1c1c1;
+    --color-button: #141411;
+    --color-hover: #ffae34;
+    /*размеры текста*/
+    --size-title: 48px;
+    --size-secondary: 24px;
+    --size-button: 20px;
+    --size-smal: 18px;
+    /*font-weight*/
+    --weight-title:700;
+    --weight-base:400;
+    
+    /* шрифт*/
+    --font-family: 'Oswald', sans-serif;
+}

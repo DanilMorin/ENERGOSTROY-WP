@@ -4,10 +4,7 @@ Author: Morin Danil
 */
 /* Подключение CSS файлов */
 
-
-:root {
-    --font-family: 'Oswald', sans-serif;
-}
 body{
     font-family: 'Oswald', sans-serif;
+    background-color: #141411;
 }

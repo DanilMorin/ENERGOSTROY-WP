@@ -1,7 +1,8 @@
+@import "variables.css";
+@import "utilities.css";
+@import "front-page.css";
 
-:root {
-    --font-family: 'Oswald', sans-serif;
-}
-body{
+body {
     font-family: 'Oswald', sans-serif;
+    background-color: #141411;
 }
