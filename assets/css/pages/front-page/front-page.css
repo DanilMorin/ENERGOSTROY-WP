@@ -1,0 +1,28 @@
+.hero .container {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  gap: clamp(50px, 5vw, 250px);
+  padding-top: 160px;
+}
+.hero .container .hero__titles {
+  padding-top: 60px;
+  max-width: 862px;
+  width: 100%;
+}
+.hero .container .hero__titles .text-title {
+  margin-bottom: clump(35px, 4vw, 64px);
+}
+.hero .container .hero__titles p {
+  margin-bottom: 125px;
+}
+.hero .container .hero__titles .btn {
+  max-width: 380px;
+  width: 100%;
+  font-weight: var(--weight-title);
+  font-size: var(--size-button);
+}
+.hero .container .hero__img img {
+  max-width: 520px;
+  width: 100%;
+}/*# sourceMappingURL=front-page.css.map */

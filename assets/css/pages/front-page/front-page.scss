@@ -1,0 +1,37 @@
+.hero {
+    .container {
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        gap: clamp(50px, 5vw, 250px);
+        padding-top: 160px;
+
+        .hero__titles {
+            padding-top: 60px;
+            max-width: 862px;
+            width: 100%;
+
+            .text-title {
+                margin-bottom: clump(35px, 4vw, 64px);
+            }
+
+            p {
+                margin-bottom: 125px;
+            }
+
+            .btn {
+                max-width: 380px;
+                width: 100%;
+                font-weight: var(--weight-title);
+                font-size: var(--size-button);
+            }
+        }
+
+        .hero__img {
+            img {
+                max-width: 520px;
+                width: 100%;
+            }
+        }
+    }
+}
