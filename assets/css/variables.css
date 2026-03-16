@@ -1,0 +1,19 @@
+:root {
+    /* основыне цвета*/
+    --color-primary: #fff;
+    --color-secondary: #c1c1c1;
+    --color-button: #141411;
+    --color-hover: #ffae34;
+    /*размеры текста*/
+    --size-title: clamp(18px, 3vw, 48px);
+    --size-description:clamp(14px, 2vw, 28px);
+    --size-secondary:clamp(12px, 2vw,24px);
+    --size-button: clamp(14px, 2vw, 20px);
+    --size-smal: 18px; /*размер шрифта для текста меню*/
+    /*font-weight*/
+    --weight-title:700;
+    --weight-base:400;
+    
+    /* шрифт*/
+    --font-family: 'Oswald', sans-serif;
+}

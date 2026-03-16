@@ -2,19 +2,28 @@
 function energostroy_enqueue_scripts()
 {
     $version = '1.0.0';
+    
+    wp_enqueue_style(
+        'main-style',
+        get_template_directory_uri() . '/assets/css/main.css',
+        [],
+        $version
+    );
+
+    if (is_front_page()) { // если страница front-page, то подгружаются только её стили
+        wp_enqueue_style(
+            'front-page-style',
+            get_template_directory_uri() . '/assets/css/pages/front-page/front-page.css',
+            ['main-style'],
+            $version
+        );
+    }
 
     wp_enqueue_style(
         'google-fonts',
         'https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap',
         [],
-        $version
-    );
-
-    wp_enqueue_style(
-        'energostroy-main',
-        get_template_directory_uri() . '/assets/css/main.css',
-        ['google-fonts'],
-        $version
+        null
     );
 
     wp_enqueue_script(
@@ -25,4 +34,5 @@ function energostroy_enqueue_scripts()
         true
     );
 }
-add_action('wp_enqueue_scripts', 'energostroy_enqueue_scripts', 10);
+
+add_action('wp_enqueue_scripts', 'energostroy_enqueue_scripts');
