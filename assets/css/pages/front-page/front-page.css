@@ -59,6 +59,12 @@
     width: 100%;
     order: 2;
   }
+  .hero .container .hero__titles .text-title {
+    margin-bottom: 16px;
+  }
+  .hero .container .hero__titles .text-description {
+    margin-bottom: 16px;
+  }
   .hero .container .hero__img {
     max-width: 350px;
     order: 1;

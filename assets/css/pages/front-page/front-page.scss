@@ -81,6 +81,12 @@
                 max-width: 350px;
                 width: 100%;
                 order: 2;
+                .text-title{
+                    margin-bottom: 16px;  
+                }
+                .text-description{
+                    margin-bottom: 16px;
+                }
             }
             .hero__img{
                 max-width: 350px;
@@ -88,5 +94,4 @@
             }
         }
     }
-
 }
