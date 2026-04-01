@@ -1,7 +1,6 @@
 .hero .container {
   display: flex;
   flex-direction: row;
-  text-align: left;
   gap: clamp(50px, 5vw, 250px);
   padding-top: 160px;
 }
@@ -24,6 +23,17 @@
 }
 .hero .container .hero__img img {
   width: 520px;
+}
+
+.partners {
+  width: 100%;
+  height: 100px;
+  background-color: #E0B992;
+}
+.partners .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 @media (max-width: 1024px) {

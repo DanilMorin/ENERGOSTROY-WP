@@ -32,4 +32,15 @@
         </ul>
     </div>
 </section>
+<section class="partners">
+    <div class="container">
+        <h2 class="text-title-second">Наши партнёры</h2>
+        <div>
+            <img src="" alt="">
+            <img src="" alt="">
+        </div>
+
+    </div>
+
+</section>
 <?php get_footer(); ?>
