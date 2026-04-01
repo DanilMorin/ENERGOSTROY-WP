@@ -6,17 +6,27 @@ body {
     background-color: #141411;
     margin: 0 auto;
 }
-.container{
-    width: 100%;
-    max-width: 1500px;
-    margin-inline: auto;
+
+.container {
     padding-left: 10px;
     padding-right: 10px;
+    width: min(1500px, 100% - 40px);
+    margin-inline: auto;
 }
-@media(max-width:550px){
-    .container{
+
+@media(max-width:550px) {
+    .container {
         max-width: 450px;
         width: 100%;
 
+    }
+}
+
+@media(max-width:480px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        max-width: 350px;
+        width: 100%;
     }
 }

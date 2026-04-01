@@ -19,6 +19,7 @@
     font-size: var(--size-description);
     color: var(--color-secondary);
 }
+
 /*стили кнопок*/
 .btn {
     display: inline-flex;
@@ -29,10 +30,36 @@
     border-radius: 10px;
     text-align: center;
     text-decoration: none;
-    color:var( --color-button);
+    color: var(--color-button);
 }
-.btn:hover{
+
+.btn:hover {
     transition: 0.5s ease;
     background-color: var(--color-hover);
     color: var(--color-primary);
+}
+
+/*стили списка*/
+.custom-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.custom-list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: clamp(12px, 3vw, 40px);
+}
+
+.custom-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: clamp(4px,1vw,7px);
+     height: 80%;
+    background: #ffae34;
+    border-radius: 0;
 }

@@ -1,8 +1,5 @@
 .hero {
     .container {
-        display: flex;
-        flex-direction: row;
-        text-align: left;
         gap: clamp(50px, 5vw, 250px);
         padding-top: 160px;
 
@@ -33,6 +30,9 @@
             }
         }
     }
+}
+.about{
+
 }
 
 @media(max-width:1024px) {
