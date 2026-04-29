@@ -1,5 +1,14 @@
-main{
-    .hero{
-        background-image: url("/assets/img/main.png");
+main {
+    .hero {
+        picture {
+            .hero__img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover; 
+                object-position: center;
+            }
+
+        }
+
     }
 }
