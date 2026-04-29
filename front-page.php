@@ -3,44 +3,25 @@
  Template Name: Main
  */
 ?>
+
+  <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/img/main.png" alt="ЭНЕРГОСТРОЙ - Энергия в каждом решении, надежность в каждом проекте"> -->
 <?php get_header(); ?>
-<section class="hero">
-    <div class="container">
-        <div class="hero__titles">
-            <h1 class="text-title">Полный спектр услуг в строительстве электроэнергетической инфраструктуры</h1>
-            <p class="text-description">ЭНЕРГОСТРОЙ - Энергия в каждом решении, надежность в каждом проекте</p>
-            <a href="/" class="btn">Подробнее о компании</a>
-        </div>
-        <div class="hero__img">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/main.png" alt="ЭНЕРГОСТРОЙ - Энергия в каждом решении, надежность в каждом проекте">
-        </div>
-    </div>
-</section>
-<section class="about">
-    <div class="container">
-        <h2 class="text-title">ЭНЕРГОСТРОЙ</h2>
-        <ul class="custom-list">
-            <li class="text-base">
-                Наша команда объединяет высококлассных специалистов с многолетним опытом в строительстве и реконструкции энергетических объектов. Мы успешно работаем над масштабными проектами, обеспечивая надежность и качество на каждом этапе
-            </li>
-            <li class="text-base">
-                Для достижения высоких результатов мы непрерывно внедряем передовые технологии и расширяем наши технические возможности. Постоянное развитие и накопление знаний позволяют нам решать самые сложные задачи и находить эффективные решения для наших клиентов
-            </li>
-            <li class="text-base">
-                Мы гордимся нашими профессионалами, чей опыт и экспертиза являются основой успеха компании. Вклад каждого сотрудника помогает нам уверенно расти, осваивать новые рынки и открывать новые горизонты в сфере энергетического строительства
-            </li>
-        </ul>
-    </div>
-</section>
-<section class="partners">
-    <div class="container">
-        <h2 class="text-title-second">Наши партнёры</h2>
-        <div>
-            <img src="" alt="">
-            <img src="" alt="">
-        </div>
 
-    </div>
 
-</section>
+<main class="site-main">
+
+    <section class="hero">
+        
+    </section>
+
+    <section class="about" id="about">
+        
+    </section>
+
+    <section class="partners">
+        
+    </section>
+
+</main>
+
 <?php get_footer(); ?>

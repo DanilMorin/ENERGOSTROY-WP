@@ -1,0 +1,24 @@
+{
+  "name": "energostroy",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000E\u0000N\u0000E\u0000R\u0000G\u0000O\u0000S\u0000T\u0000R\u0000O\u0000Y\u0000-\u0000W\u0000P\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sync": "browser-sync start --proxy \"localhost/energostroy\" --files \"**/*.php, assets/css/**/*.css, assets/js/**/*.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanilMorin/ENERGOSTROY-WP.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanilMorin/ENERGOSTROY-WP/issues"
+  },
+  "homepage": "https://github.com/DanilMorin/ENERGOSTROY-WP#readme",
+  "devDependencies": {
+    "browser-sync": "^3.0.4"
+  }
+}
