@@ -5,7 +5,7 @@
     --color-button: #141411;
     --color-hover: #ffae34;
     /*размеры текста*/
-    --size-title: clamp(18px, 3vw, 48px);
+    --size-title: clamp(18px, 3vw, 62px);
     --size-description:clamp(14px, 2vw, 28px);
     --size-secondary:clamp(12px, 2vw,24px);
     --size-button: clamp(14px, 2vw, 20px);

@@ -12,16 +12,15 @@
 
     <section class="hero">
         <div class="hero__image">
+            <div class="hero__content">
+                <h1 class="text-title"> Строительство и монтаж<br>инженерных систем под ключ </h1>
+            </div>
             <picture>
                 <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/mainMob.png" media="(max-width: 500px)">
                 <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/main.png" media="(max-width: 1024px)">
-                <img
-                    src="<?php echo get_template_directory_uri(); ?>/assets/img/main.png"
-                    alt="ЭНЕРГОСТРОЙ"
-                    class="hero__img">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/main.png" alt="ЭНЕРГОСТРОЙ" class="hero__img">
             </picture>
         </div>
-
     </section>
 
     <section class="about" id="about">

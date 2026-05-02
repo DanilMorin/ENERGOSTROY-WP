@@ -14,19 +14,9 @@ body {
     margin-inline: auto;
 }
 
-@media(max-width:550px) {
+@media (max-width: 480px) {
     .container {
-        max-width: 450px;
-        width: 100%;
-
+        width: min(100% - 24px, 350px);
     }
 }
 
-@media(max-width:480px) {
-    .container {
-        display: flex;
-        flex-direction: column;
-        max-width: 350px;
-        width: 100%;
-    }
-}
