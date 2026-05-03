@@ -1,16 +1,39 @@
-main .hero__content {
-  position: absolute;
-  padding-left: clamp(20px, 8vw, 230px);
-  top: clamp(60px, 6vw, 120px);
-}
-main .hero .hero__image {
+main .hero {
+  background-image: url("../../../img/main.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: clamp(420px, 55vw, 800px);
   position: relative;
 }
-main .hero .hero__image picture .hero__img {
+main .hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(20px, 8vw, 125px);
+  max-width: 951px;
   width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  padding-top: clamp(60px, 6vw, 120px);
+}
+main .hero__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 10px;
+  max-width: 380px;
+  height: clamp(50px, 4vw, 82px);
+  background-color: var(--color-primary);
+  color: var(--color-button);
+  font-size: clamp(14px, 1.5vw, 20px);
+  font-weight: 700;
+}
+
+@media (max-width: 500px) {
+  main .hero {
+    height: 100%;
+    background-image: url("../../../img/mainMob.png");
+  }
+  main .hero__content {
+    padding-top: 60%;
+  }
 }/*# sourceMappingURL=front-page.css.map */

@@ -28,23 +28,7 @@
 }
 
 /*стили кнопок*/
-.btn {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--color-primary);
-    height: 80px;
-    border-radius: 10px;
-    text-align: center;
-    text-decoration: none;
-    color: var(--color-button);
-}
 
-.btn:hover {
-    transition: 0.5s ease;
-    background-color: var(--color-hover);
-    color: var(--color-primary);
-}
 
 /*стили списка*/
 .custom-list {

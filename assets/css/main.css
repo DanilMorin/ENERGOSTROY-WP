@@ -10,13 +10,13 @@ body {
 .container {
     padding-left: 10px;
     padding-right: 10px;
-    width: min(1500px, 100% - 40px);
+    width: min(1500px, calc(100% - 40px));
     margin-inline: auto;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
     .container {
-        width: min(100% - 24px, 350px);
+        width: min(500px, calc(100% - 10px));
     }
 }
 
