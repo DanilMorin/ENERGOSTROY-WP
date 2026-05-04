@@ -2,7 +2,7 @@
 function energostroy_enqueue_scripts()
 {
     $version = '1.0.0';
-    
+
     wp_enqueue_style(
         'main-style',
         get_template_directory_uri() . '/assets/css/main.css',
@@ -17,7 +17,7 @@ function energostroy_enqueue_scripts()
         $version
     );
 
-    if (is_front_page()) { // если страница front-page, то подгружаются только её стили
+    if (is_front_page() || is_page_template('front-page.php')) { // если страница front-page, то подгружаются только её стили
         wp_enqueue_style(
             'front-page-style',
             get_template_directory_uri() . '/assets/css/pages/front-page/front-page.css',
@@ -32,11 +32,26 @@ function energostroy_enqueue_scripts()
         [],
         null
     );
+    //подключение библиотеки splide
+    wp_enqueue_style(
+        'splide-css',
+        get_template_directory_uri() . '/assets/libs/splide/splide.min.css',
+        [],
+        '4.1.4'
+    );
+
+    wp_enqueue_script(
+        'splide-js',
+        get_template_directory_uri() . '/assets/libs/splide/splide.min.js',
+        [],
+        '4.1.4',
+        true
+    );
 
     wp_enqueue_script(
         'energostroy-script',
         get_template_directory_uri() . '/assets/js/main.js',
-        [],
+       ['splide-js'],
         $version,
         true
     );

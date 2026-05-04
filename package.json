@@ -20,5 +20,8 @@
   "homepage": "https://github.com/DanilMorin/ENERGOSTROY-WP#readme",
   "devDependencies": {
     "browser-sync": "^3.0.4"
+  },
+  "dependencies": {
+    "@splidejs/splide": "^4.1.4"
   }
 }

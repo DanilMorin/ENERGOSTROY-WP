@@ -27,6 +27,13 @@
     color: var(--color-secondary);
 }
 
+.text-slider {
+    font-family: var(--font-family);
+    font-weight: var(--weight-title);
+    font-size: var(--size-slider);
+    color: var(--color-primary);
+}
+
 /*стили кнопок*/
 
 
