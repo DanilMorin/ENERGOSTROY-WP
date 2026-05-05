@@ -10,7 +10,7 @@
     font-family: var(--font-family);
     font-weight: var(--weight-title);
     font-size: var(--size-title);
-    color: var( --color-button);
+    color: var(--color-primary);
 }
 
 .text-base {
@@ -30,7 +30,7 @@
 .text-slider {
     font-family: var(--font-family);
     font-weight: var(--weight-title);
-    font-size: var(--size-slider);
+    font-size: var(--size-title-h2);
     color: var(--color-primary);
 }
 
