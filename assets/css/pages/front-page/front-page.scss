@@ -1,96 +1,118 @@
-.hero {
-    .container {
-        gap: clamp(50px, 5vw, 250px);
-        padding-top: 160px;
-
-        .hero__titles {
-            padding-top: 60px;
-            max-width: 862px;
-            width: 100%;
-
-            .text-title {
-                margin-bottom: clamp(35px, 4vw, 64px);
-            }
-
-            p {
-                margin-bottom: 125px;
-            }
-
-            .btn {
-                max-width: 380px;
-                width: 100%;
-                font-weight: var(--weight-title);
-                font-size: var(--size-button);
-            }
-        }
-
-        .hero__img {
-            img {
-                width: 520px;
-            }
-        }
-    }
-}
-.about{
-
-}
-
-@media(max-width:1024px) {
+main {
     .hero {
-        .container {
-            padding-top: 35px;
+        background-image: url("../../../img/main.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        min-height: clamp(420px, 55vw, 800px);
+        position: relative;
 
-            .hero__titles {
-                padding-top: 0px;
-                max-width: 563px;
-                width: 100%;
+        &__content {
+            display: flex;
+            flex-direction: column;
+            gap: clamp(20px, 8vw, 125px);
+            max-width: 951px;
+            width: 100%;
+            padding-top: clamp(60px, 6vw, 120px);
+            padding-bottom: 10px;
+        }
 
-                .text-title {
-
-                }
-
-                p {
-                    margin-bottom: clamp(30px, 6vw, 100px);
-
-                }
-
-                .btn {
-                    max-width: 380px;
-                    width: 100%;
-                    height: 50px;
-                }
-
+        &__button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            border-radius: 10px;
+            max-width: 380px;
+            height: clamp(50px, 4vw, 82px);
+            background-color: var(--color-primary);
+            color: var(--color-button);
+            font-size: clamp(14px, 1.5vw, 20px);
+            font-weight: 700;
+        }
+    }
+    .service {
+        margin: 80px 0;
+        &__title{
+            margin-bottom: clamp(40px, 4vw, 90px);
+        }
+        .service-slider {
+            .splide__arrow {
+                width: clamp(20px, 3vw, 40px);
+                height: clamp(20px, 3vw, 40px);
+                background: transparent;
+                opacity: 1;
             }
 
-            .hero__img {
-                img {
-                    max-width: 350px;
-                    width: 100%;
-                }
+            .splide__arrow svg {
+                width: 100%;
+                height: 100%;
+                fill: #ffffff;
+            }
+
+            .splide__arrow:hover svg {
+                fill: #808080;
+            }
+        }
+
+        .service-card {
+            max-width: 1350px;
+            width: 100%;
+            padding: 32px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: clamp(5px, 5vw, 70px);
+
+            img {
+                flex: 0 1 800px;
+                max-width: 50%;
+                width: 100%;
+                height: auto;
+                display: block;
+
             }
         }
     }
 }
-@media(max-width:480px){
-    .hero{
-        .container{
-            align-items: center;
-            flex-direction: column;
-            gap: 10px;
-            .hero__titles{
-                max-width: 350px;
-                width: 100%;
-                order: 2;
-                .text-title{
-                    margin-bottom: 16px;  
-                }
-                .text-description{
-                    margin-bottom: 16px;
-                }
+
+@media (max-width: 500px) {
+    main {
+        .hero {
+            height: 100%;
+            background-image: url("../../../img/mainMob.png");
+
+            &__content {
+                padding-top: 60%;
             }
-            .hero__img{
-                max-width: 350px;
-                order: 1;
+        }
+
+        .service {
+            margin-top: 20px;
+
+            &__title {
+                margin-bottom: 30px;
+
+            }
+
+            .service-card {
+                justify-content: center;
+                flex-direction: column;
+                text-align: center;
+
+                h2 {
+                    order: 2;
+
+                }
+
+                img {
+                    order: 1;
+                    flex: 1;
+                    max-width: 320px;
+                    width: 100%;
+
+                }
             }
         }
     }
