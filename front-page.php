@@ -27,7 +27,6 @@
             <div class="service__title">
                 <h2 class="text-title-second">Спектр услуг</h2>
             </div>
-
             <div class="splide service-slider" aria-label="Проекты">
                 <div class="splide__track">
                     <ul class="splide__list">
@@ -49,22 +48,22 @@
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/constructionWorkers.png" alt="Проекты">
                             </div>
                         </li>
-                         <li class="splide__slide">
+                        <li class="splide__slide">
                             <div class="service-card">
                                 <h2 class="text-slider">Пусконаладочные работы и электротехнические испытания</h2>
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/CommissioningWorks.png" alt="Проекты">
                             </div>
                         </li>
-
                     </ul>
                 </div>
             </div>
-
         </div>
-
     </section>
 
-    <section class="partners">
+    <section class="about-work">
+        <div class="container">
+
+        </div>
 
     </section>
 

@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (slider) {
         new Splide(slider, {
             type: 'loop',
-            speed: 1000,
+            speed: 1900,
             perPage: 1,
             focus: 'center',
             arrows: true,

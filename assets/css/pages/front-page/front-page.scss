@@ -1,50 +1,4 @@
 main {
-
-    .service {
-        margin: 80px 0;
-    }
-
-    .service-slider {
-        .splide__arrow {
-            width: clamp(20px, 3vw, 40px);
-            height: clamp(20px, 3vw, 40px);
-            background: transparent;
-            opacity: 1;
-        }
-
-        .splide__arrow svg {
-            width: 100%;
-            height: 100%;
-            fill: #ffffff;
-        }
-
-        .splide__arrow:hover svg {
-            fill: #808080;
-        }
-    }
-
-    .service-card {
-        max-width: 1350px;
-        width: 100%;
-        padding: 32px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: clamp(5px, 5vw, 70px);
-        
-       
-
-        img {
-            flex: 0 1 800px;
-            max-width: 50%;
-            width: 100%;
-            height: auto;
-            display: block;
-
-        }
-    }
-
     .hero {
         background-image: url("../../../img/main.png");
         background-repeat: no-repeat;
@@ -75,6 +29,50 @@ main {
             color: var(--color-button);
             font-size: clamp(14px, 1.5vw, 20px);
             font-weight: 700;
+        }
+    }
+    .service {
+        margin: 80px 0;
+        &__title{
+            margin-bottom: clamp(40px, 4vw, 90px);
+        }
+        .service-slider {
+            .splide__arrow {
+                width: clamp(20px, 3vw, 40px);
+                height: clamp(20px, 3vw, 40px);
+                background: transparent;
+                opacity: 1;
+            }
+
+            .splide__arrow svg {
+                width: 100%;
+                height: 100%;
+                fill: #ffffff;
+            }
+
+            .splide__arrow:hover svg {
+                fill: #808080;
+            }
+        }
+
+        .service-card {
+            max-width: 1350px;
+            width: 100%;
+            padding: 32px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: clamp(5px, 5vw, 70px);
+
+            img {
+                flex: 0 1 800px;
+                max-width: 50%;
+                width: 100%;
+                height: auto;
+                display: block;
+
+            }
         }
     }
 }
@@ -118,5 +116,4 @@ main {
             }
         }
     }
-
 }
