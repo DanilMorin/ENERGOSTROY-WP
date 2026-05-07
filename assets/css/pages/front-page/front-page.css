@@ -51,19 +51,50 @@ main .service .service-slider .splide__arrow:hover svg {
 main .service .service-card {
   max-width: 1350px;
   width: 100%;
-  padding: 32px;
+  padding: clamp(20px, 3vw, 32px);
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   align-items: center;
-  gap: clamp(5px, 5vw, 70px);
+  justify-content: center;
+  gap: clamp(24px, 5vw, 70px);
 }
-main .service .service-card img {
+main .service .service-card__text {
+  flex: 0 1 550px;
+  max-width: 550px;
+  width: 100%;
+}
+main .service .service-card__text h2 {
+  margin: 0;
+}
+main .service .service-card__image {
   flex: 0 1 800px;
-  max-width: 50%;
+  max-width: 800px;
+  width: 100%;
+}
+main .service .service-card__image img {
   width: 100%;
   height: auto;
   display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .service .about-work__title {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(10px, 1.5vw, 20px);
+  margin-bottom: clamp(20px, 4vw, 80px);
+}
+main .service .about-work .cards-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+main .service .about-work .cards-wrapper .card {
+  display: flex;
+  flex-direction: column;
+}
+main .service .about-work .cards-wrapper .card__image img {
+  max-width: 40px;
+  width: 100%;
 }
 
 @media (max-width: 500px) {
@@ -81,17 +112,29 @@ main .service .service-card img {
     margin-bottom: 30px;
   }
   main .service .service-card {
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    gap: 24px;
   }
-  main .service .service-card h2 {
-    order: 2;
-  }
-  main .service .service-card img {
+  main .service .service-card__image {
     order: 1;
-    flex: 1;
+    flex: none;
     max-width: 320px;
     width: 100%;
+  }
+  main .service .service-card__image img {
+    max-width: 320px;
+    width: 100%;
+  }
+  main .service .service-card__text {
+    order: 2;
+    flex: none;
+    max-width: 100%;
+    width: 100%;
+  }
+  main .service .service-card__text h2 {
+    margin: 0;
   }
 }/*# sourceMappingURL=front-page.css.map */

@@ -32,26 +32,49 @@
                     <ul class="splide__list">
                         <li class="splide__slide">
                             <div class="service-card">
-                                <h2 class="text-slider">Проектирование объектов<br>электроэнергетики</h2>
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/project.png" alt="Проекты">
+                                <div class="service-card__text">
+                                    <h2 class="text-slider">Проектирование объектов<br>электроэнергетики</h2>
+                                </div>
+
+                                <div class="service-card__image">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/project.png" alt="Проектирование объектов электроэнергетики">
+                                </div>
                             </div>
                         </li>
+
                         <li class="splide__slide">
                             <div class="service-card">
-                                <h2 class="text-slider">Обслуживание трансформаторных<br>подстанций, электроустановок и кабельных линий</h2>
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/electricalInstallations.png" alt="Проекты">
+                                <div class="service-card__text">
+                                    <h2 class="text-slider">Обслуживание&nbsp;трансформаторных подстанций, электроустановок<br>и кабельных линий</h2>
+                                </div>
+
+                                <div class="service-card__image">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/electricalInstallations.png" alt="Обслуживание трансформаторных подстанций, электроустановок и кабельных линий">
+                                </div>
                             </div>
                         </li>
+
                         <li class="splide__slide">
                             <div class="service-card">
-                                <h2 class="text-slider">Строительство объектов<br>электроэнергетики</h2>
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/constructionWorkers.png" alt="Проекты">
+                                <div class="service-card__text">
+                                    <h2 class="text-slider">Строительство объектов электроэнергетики</h2>
+                                </div>
+
+                                <div class="service-card__image">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/constructionWorkers.png" alt="Строительство объектов электроэнергетики">
+                                </div>
                             </div>
                         </li>
+
                         <li class="splide__slide">
                             <div class="service-card">
-                                <h2 class="text-slider">Пусконаладочные работы и электротехнические испытания</h2>
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/CommissioningWorks.png" alt="Проекты">
+                                <div class="service-card__text">
+                                    <h2 class="text-slider">Пусконаладочные работы<br>и электротехнические испытания</h2>
+                                </div>
+
+                                <div class="service-card__image">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/CommissioningWorks.png" alt="Пусконаладочные работы и электротехнические испытания">
+                                </div>
                             </div>
                         </li>
                     </ul>
@@ -62,9 +85,22 @@
 
     <section class="about-work">
         <div class="container">
-
+            <div class="about-work__title">
+                <h2 class="text-title-second">Как мы работаем</h2>
+                <p class="text-description">Прозрачный процесс и понятные условия на каждом этапе</p>
+            </div>
+            <div class="cards-wrapper">
+                <div class="card">
+                    <div class="card__image">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bell.svg" alt="">
+                    </div>
+                    <div class="card__content">
+                        <h3 class="text-title-third">Этап 1</h3>
+                        <p class="text-description">Описание этапа 1</p>
+                    </div>
+                </div>
+            </div>
         </div>
-
     </section>
 
 </main>
