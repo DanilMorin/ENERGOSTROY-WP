@@ -63,7 +63,7 @@
     top: 50%;
     transform: translateY(-50%);
     width: clamp(4px, 1vw, 7px);
-    height: 80%;
+    height: 100%;
     background: #ffae34;
     border-radius: 0;
 }

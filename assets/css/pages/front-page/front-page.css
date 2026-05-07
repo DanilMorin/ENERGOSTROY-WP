@@ -131,8 +131,52 @@ main .about-work .cards-wrapper .card__content h3 {
   letter-spacing: -0.01em;
   color: #fff;
 }
+main .about {
+  margin-bottom: clamp(20px, 4vw, 80px);
+}
 main .about h2 {
   margin-bottom: clamp(20px, 4vw, 80px);
+}
+main .partners {
+  background: #e0b992;
+  padding-top: clamp(40px, 5vw, 120px);
+  margin-bottom: clamp(20px, 4vw, 80px);
+}
+main .partners .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .partners .wrapper h2 {
+  width: 100%;
+  max-width: calc(936px + clamp(20px, 4vw, 80px));
+  color: #000;
+  padding-top: clamp(20px, 4vw, 80px);
+  margin-bottom: clamp(20px, 4vw, 80px);
+  align-self: center;
+}
+main .partners .wrapper .partners-logo {
+  width: 100%;
+  max-width: calc(936px + clamp(20px, 4vw, 80px));
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: clamp(20px, 4vw, 80px);
+}
+main .partners .wrapper .partners-logo__img {
+  flex: 1;
+  max-width: 400px;
+  width: 100%;
+  padding-bottom: clamp(20px, 4vw, 80px);
+}
+main .partners .wrapper .partners-logo__img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 15px;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.45), 0 7px 10px 0 rgba(0, 0, 0, 0.32), 0 13px 19px 0 rgba(0, 0, 0, 0.27), 0 22px 34px 0 rgba(0, 0, 0, 0.22), 0 42px 63px 0 rgba(0, 0, 0, 0.18), 0 100px 150px 0 rgba(0, 0, 0, 0.13);
 }
 
 @media (max-width: 1024px) {

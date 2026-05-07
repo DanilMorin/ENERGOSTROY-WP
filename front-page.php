@@ -145,6 +145,22 @@
             </ul>
         </div>
     </section>
+    <section class="partners">
+        <div class="container">
+            <div class="wrapper">
+                <h2 class="text-title-second">Наши партнёры</h2>
+                <div class="partners-logo">
+                    <div class="partners-logo__img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/megastroy.png" alt="">
+                    </div>
+                    <div class="partners-logo__img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/energoarm.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
 
 </main>
 
