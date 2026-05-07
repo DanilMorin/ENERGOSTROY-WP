@@ -26,6 +26,12 @@
     font-size: var(--size-description);
     color: var(--color-secondary);
 }
+.text-card {
+    font-family: var(--font-family);
+    font-weight: var(--weight-base);
+    font-size: var( --size-description-card);
+    color: var(--color-secondary);
+}
 
 .text-slider {
     font-family: var(--font-family);
@@ -57,7 +63,7 @@
     top: 50%;
     transform: translateY(-50%);
     width: clamp(4px, 1vw, 7px);
-    height: 80%;
+    height: 100%;
     background: #ffae34;
     border-radius: 0;
 }
