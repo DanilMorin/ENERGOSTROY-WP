@@ -61,6 +61,7 @@ main .service .service-card__text {
   flex: 0 1 550px;
   max-width: 550px;
   width: 100%;
+  margin-left: clamp(10px, 1vw, 20px);
 }
 main .service .service-card__text h2 {
   margin: 0;
@@ -77,26 +78,54 @@ main .service .service-card__image img {
   -o-object-fit: cover;
      object-fit: cover;
 }
-main .service .about-work__title {
+main .about-work__title {
   display: flex;
   flex-direction: column;
   gap: clamp(10px, 1.5vw, 20px);
   margin-bottom: clamp(20px, 4vw, 80px);
 }
-main .service .about-work .cards-wrapper {
+main .about-work .cards-wrapper {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  gap: clamp(10px, 3vw, 50px);
 }
-main .service .about-work .cards-wrapper .card {
+main .about-work .cards-wrapper .card {
   display: flex;
   flex-direction: column;
+  border: 0.8px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  max-width: 320px;
+  width: 100%;
+  height: 320px;
+  background-size: cover;
+  backdrop-filter: blur(60.0000038147px);
+  box-shadow: inset 0 0 1px 0 #a4a4a4;
+  background: rgba(255, 255, 255, 0.02);
+  padding-left: clamp(15px, 3vw, 30px);
+  padding-top: clamp(30px, 3vw, 40px);
 }
-main .service .about-work .cards-wrapper .card__image img {
+main .about-work .cards-wrapper .card__image {
+  margin-bottom: clamp(40px, 4vw, 80px);
+}
+main .about-work .cards-wrapper .card__image img {
   max-width: 40px;
   width: 100%;
 }
-
+main .about-work .cards-wrapper .card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 262px;
+  width: 100%;
+}
+main .about-work .cards-wrapper .card__content h3 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: -0.01em;
+  color: #fff;
+}
 @media (max-width: 500px) {
   main .hero {
     height: 100%;
@@ -133,6 +162,7 @@ main .service .about-work .cards-wrapper .card__image img {
     flex: none;
     max-width: 100%;
     width: 100%;
+    margin-left: 0;
   }
   main .service .service-card__text h2 {
     margin: 0;

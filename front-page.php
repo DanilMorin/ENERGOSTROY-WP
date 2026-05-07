@@ -95,8 +95,35 @@
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bell.svg" alt="">
                     </div>
                     <div class="card__content">
-                        <h3 class="text-title-third">Этап 1</h3>
-                        <p class="text-description">Описание этапа 1</p>
+                        <h3 >Заявка</h3>
+                        <p class="text-card">Обсуждение задачи</p>
+                    </div>
+                </div>
+                 <div class="card">
+                    <div class="card__image">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/wallet.svg" alt="">
+                    </div>
+                    <div class="card__content">
+                        <h3 >Расчёт стоимости</h3>
+                        <p class="text-card">Фиксируем стоимость до начала работ</p>
+                    </div>
+                </div>
+                  <div class="card">
+                    <div class="card__image">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/wallet.svg" alt="">
+                    </div>
+                    <div class="card__content">
+                        <h3 >Договор</h3>
+                        <p class="text-card">Работаем по договору. Выполняем работы под ключ, контролируя сроки и качество</p>
+                    </div>
+                </div>
+                 <div class="card">
+                    <div class="card__image">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/wallet.svg" alt="">
+                    </div>
+                    <div class="card__content">
+                        <h3 >Выполнение работ</h3>
+                        <p class="text-card">Используем проверенные решения и оборудование. Работаем  с поставщиками и подрядчиками</p>
                     </div>
                 </div>
             </div>
