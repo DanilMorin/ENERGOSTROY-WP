@@ -165,6 +165,11 @@ main {
         h2 {
             margin-bottom: clamp(20px, 4vw, 80px);
         }
+
+        a {
+            max-width: 292px;
+            width: 100%;
+        }
     }
 
     .partners {
@@ -215,7 +220,8 @@ main {
     }
 
     .contacts {
-         margin-bottom: clamp(20px, 4vw, 80px);
+        margin-bottom: clamp(20px, 4vw, 80px);
+
         .title-wrapper {
             display: flex;
             flex-direction: column;
@@ -366,6 +372,13 @@ main {
                         }
                     }
                 }
+            }
+        }
+
+        .about {
+            a {
+                max-width: 100px;
+                width: 100%;
             }
         }
 

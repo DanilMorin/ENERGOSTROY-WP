@@ -12,13 +12,13 @@
                 <div class="hero__content">
                     <h1 class="hero__title text-title"> Строительство и монтаж<br>инженерных систем под ключ </h1>
                     <p class="hero__description text-base">Выполняем электромонтаж, проектирование и подключение объектов с гарантией и соблюдением сроков</p>
-                    <a class="hero__button " href="">Обсудить проект</a>
+                    <a class="hero__button " href="#contacts-id">Обсудить проект</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="service" id="service">
+    <section class="service" id="service-id">
         <div class="container">
             <div class="service__title">
                 <h2 class="text-title-second">Спектр услуг</h2>
@@ -79,7 +79,7 @@
         </div>
     </section>
 
-    <section class="about-work">
+    <section class="about-work" id="about-work-id">
         <div class="container">
             <div class="about-work__title">
                 <h2 class="text-title-second">Как мы работаем</h2>
@@ -125,7 +125,7 @@
             </div>
         </div>
     </section>
-    <section class="about">
+    <section class="about" id="about-id">
         <div class="container">
             <h2 class="text-title-second">ЭНЕРГОСТРОЙ</h2>
             <ul class="custom-list">
@@ -139,9 +139,10 @@
                     Мы гордимся нашими профессионалами, чей опыт и экспертиза являются основой успеха компании. Вклад каждого сотрудника помогает нам уверенно расти, осваивать новые рынки и открывать новые горизонты в сфере энергетического строительства
                 </li>
             </ul>
+            <a class="hero__button " href="">Проекты</a>
         </div>
     </section>
-    <section class="partners">
+    <section class="partners" id="partners-id">
         <div class="container">
             <div class="wrapper">
                 <h2 class="text-title-second">Наши партнёры</h2>
@@ -156,7 +157,7 @@
             </div>
         </div>
     </section>
-    <section class="contacts">
+    <section class="contacts" id="contacts-id">
         <div class="container">
             <div class="title-wrapper">
                 <h2 class="text-title-second">Контактная информация</h2>

@@ -1,6 +1,10 @@
 @import "variables.css";
 @import "utilities.css";
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Oswald', sans-serif;
     background-color: #141411;
