@@ -158,7 +158,22 @@
                     </div>
                 </div>
             </div>
-
+        </div>
+    </section>
+    <section class="contacts">
+        <div class="container">
+            <div class="title-wrapper">
+                <h2 class="text-title-second">Контактная информация</h2>
+                <p class="text-description">Остались вопросы? Свяжитесь с нами!</p>
+            </div>
+            <div class="contacts-wrapper">
+                <div class="contacts-wrapper__item">
+                    <a href="tel:+74742710156" class="text-link text-title">+7 (4742) 71-01-56</a>
+                </div>
+                <div class="contacts-wrapper__item">
+                    <a href="mailto:energo_stroy48@bk.ru" class="text-link text-title">energo_stroy48@bk.ru</a>
+                </div>
+            </div>
         </div>
     </section>
 </main>
