@@ -12,7 +12,7 @@
                 <div class="hero__content">
                     <h1 class="hero__title text-title"> Строительство и монтаж<br>инженерных систем под ключ </h1>
                     <p class="hero__description text-base">Выполняем электромонтаж, проектирование и подключение объектов с гарантией и соблюдением сроков</p>
-                    <a class="hero__button " href="#contacts-id">Обсудить проект</a>
+                    <a class="hero__button"  href="<?php echo esc_url( home_url('/#contacts-id') ); ?>">Обсудить проект</a>
                 </div>
             </div>
         </div>
@@ -33,7 +33,7 @@
                                 </div>
 
                                 <div class="service-card__image">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/project.png" alt="Проектирование объектов электроэнергетики">
+                                    <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/project.png' ); ?>" alt="Проектирование объектов электроэнергетики">
                                 </div>
                             </div>
                         </li>
@@ -45,7 +45,7 @@
                                 </div>
 
                                 <div class="service-card__image">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/electricalInstallations.png" alt="Обслуживание трансформаторных подстанций, электроустановок и кабельных линий">
+                                    <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/electricalInstallations.png' ); ?>" alt="Обслуживание трансформаторных подстанций, электроустановок и кабельных линий">
                                 </div>
                             </div>
                         </li>
@@ -57,7 +57,7 @@
                                 </div>
 
                                 <div class="service-card__image">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/constructionWorkers.png" alt="Строительство объектов электроэнергетики">
+                                    <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/constructionWorkers.png' ); ?>" alt="Строительство объектов электроэнергетики">
                                 </div>
                             </div>
                         </li>
@@ -69,7 +69,7 @@
                                 </div>
 
                                 <div class="service-card__image">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/CommissioningWorks.png" alt="Пусконаладочные работы и электротехнические испытания">
+                                    <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/CommissioningWorks.png' ); ?>" alt="Пусконаладочные работы и электротехнические испытания">
                                 </div>
                             </div>
                         </li>
@@ -88,7 +88,7 @@
             <div class="cards-wrapper">
                 <div class="card">
                     <div class="card__image">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bell.svg" alt="">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/bell.svg' ); ?>" alt="">
                     </div>
                     <div class="card__content">
                         <h3>Заявка</h3>
@@ -97,7 +97,7 @@
                 </div>
                 <div class="card">
                     <div class="card__image">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/wallet.svg" alt="">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/wallet.svg' ); ?>" alt="">
                     </div>
                     <div class="card__content">
                         <h3>Расчёт стоимости</h3>
@@ -106,7 +106,7 @@
                 </div>
                 <div class="card">
                     <div class="card__image">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/wallet.svg" alt="">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/wallet.svg' ); ?>" alt="">
                     </div>
                     <div class="card__content">
                         <h3>Договор</h3>
@@ -115,7 +115,7 @@
                 </div>
                 <div class="card">
                     <div class="card__image">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/wallet.svg" alt="">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/wallet.svg' ); ?>" alt="">
                     </div>
                     <div class="card__content">
                         <h3>Выполнение работ</h3>
@@ -139,7 +139,7 @@
                     Мы гордимся нашими профессионалами, чей опыт и экспертиза являются основой успеха компании. Вклад каждого сотрудника помогает нам уверенно расти, осваивать новые рынки и открывать новые горизонты в сфере энергетического строительства
                 </li>
             </ul>
-            <a class="hero__button " href="">Проекты</a>
+            <a class="hero__button " href="<?php echo esc_url( home_url('/#service-id') ); ?>">Проекты</a>
         </div>
     </section>
     <section class="partners" id="partners-id">
@@ -148,10 +148,10 @@
                 <h2 class="text-title-second">Наши партнёры</h2>
                 <div class="partners-logo">
                     <div class="partners-logo__img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/megastroy.png" alt="">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/megastroy.png' ); ?>" alt="">
                     </div>
                     <div class="partners-logo__img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/energoarm.png" alt="">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/energoarm.png' ); ?>" alt="">
                     </div>
                 </div>
             </div>
@@ -165,10 +165,10 @@
             </div>
             <div class="contacts-wrapper">
                 <div class="contacts-wrapper__item">
-                    <a href="tel:+74742710156" class="text-link text-title">+7 (4742) 71-01-56</a>
+                    <a href="<?php echo esc_url( 'tel:+74742710156' ); ?>" class="text-link text-title">+7 (4742) 71-01-56</a>
                 </div>
                 <div class="contacts-wrapper__item">
-                    <a href="mailto:energo_stroy48@bk.ru" class="text-link text-title">energo_stroy48@bk.ru</a>
+                    <a href="<?php echo esc_url( 'mailto:energo_stroy48@bk.ru' ); ?>" class="text-link text-title">energo_stroy48@bk.ru</a>
                 </div>
             </div>
         </div>
