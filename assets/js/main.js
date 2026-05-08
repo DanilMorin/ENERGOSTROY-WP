@@ -15,3 +15,16 @@ document.addEventListener('DOMContentLoaded', () => {
         }).mount();
     }
 });
+
+//scroll to contacts for ios devices
+document.addEventListener('DOMContentLoaded', () => {
+  const contactBtn = document.querySelector('a[href="#contacts-id"]');
+  const target = document.querySelector('#contacts-id');
+
+  if (contactBtn && target) {
+    contactBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  }
+});
