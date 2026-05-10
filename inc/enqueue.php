@@ -17,6 +17,13 @@ function energostroy_enqueue_scripts()
         $version
     );
 
+     wp_enqueue_style(
+        'footer-style',
+        get_template_directory_uri() . '/assets/css/components/footer.css',
+        [],
+        $version
+    );
+
     if (is_front_page() || is_page_template('front-page.php')) { // если страница front-page, то подгружаются только её стили
         wp_enqueue_style(
             'front-page-style',

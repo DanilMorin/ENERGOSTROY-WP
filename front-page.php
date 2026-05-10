@@ -139,7 +139,7 @@
                     Мы гордимся нашими профессионалами, чей опыт и экспертиза являются основой успеха компании. Вклад каждого сотрудника помогает нам уверенно расти, осваивать новые рынки и открывать новые горизонты в сфере энергетического строительства
                 </li>
             </ul>
-            <a class="hero__button " href="<?php echo esc_url( home_url('/#service-id') ); ?>">Проекты</a>
+            <a class="hero__button " href="<?php echo esc_url( home_url('/projects/') ); ?>">Проекты</a>
         </div>
     </section>
     <section class="partners" id="partners-id">
