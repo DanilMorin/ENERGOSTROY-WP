@@ -26,10 +26,11 @@
     font-size: var(--size-description);
     color: var(--color-secondary);
 }
+
 .text-card {
     font-family: var(--font-family);
     font-weight: var(--weight-base);
-    font-size: var( --size-description-card);
+    font-size: var(--size-description-card);
     color: var(--color-secondary);
 }
 
@@ -37,6 +38,13 @@
     font-family: var(--font-family);
     font-weight: var(--weight-title);
     font-size: var(--size-title-h2);
+    color: var(--color-primary);
+}
+
+.text-menu {
+    font-family: var(--font-family);
+    font-weight: var(--weight-base);
+    font-size: var(--size-smal);
     color: var(--color-primary);
 }
 

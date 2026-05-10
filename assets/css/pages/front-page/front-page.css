@@ -316,4 +316,7 @@ main .contacts .contacts-wrapper .text-link {
   main .contacts .contacts-wrapper .text-link {
     text-decoration: none;
   }
+  main .contacts .contacts-wrapper .text-link:hover {
+    color: #808080;
+  }
 }/*# sourceMappingURL=front-page.css.map */
