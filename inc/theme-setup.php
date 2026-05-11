@@ -6,7 +6,7 @@ function energostroy_theme_setup() {
 
     // Регистрируем меню
    register_nav_menus([
-    'heder_menu' => 'Меню в шапке', 
+    'header_menu' => 'Меню в шапке', 
     'footer_menu' => 'Меню в подвале', //footer_menu — техническое имя для кода, "Меню в футере" — название, которое будет видно в админке WordPress
    ]);
 }
