@@ -17,9 +17,16 @@ function energostroy_enqueue_scripts()
         $version
     );
 
-     wp_enqueue_style(
+    wp_enqueue_style(
         'footer-style',
         get_template_directory_uri() . '/assets/css/components/footer.css',
+        [],
+        $version
+    );
+
+    wp_enqueue_style(
+        'header-style',
+        get_template_directory_uri() . '/assets/css/components/header.css',
         [],
         $version
     );
@@ -58,7 +65,7 @@ function energostroy_enqueue_scripts()
     wp_enqueue_script(
         'energostroy-script',
         get_template_directory_uri() . '/assets/js/main.js',
-       ['splide-js'],
+        ['splide-js'],
         $version,
         true
     );

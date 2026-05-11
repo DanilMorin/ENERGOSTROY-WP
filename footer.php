@@ -1,7 +1,6 @@
 <footer class="footer">
     <div class="container">
         <div class="footer__inner">
-
             <div class="footer__column footer__column--nav">
                 <?php
                 wp_nav_menu([
@@ -24,7 +23,6 @@
                 <a href="<?php echo esc_url('tel:+74742710156'); ?>" class="text-link">+7 (4742) 71-01-56</a>
                 <a href="<?php echo esc_url('mailto:enerenergo_stroy48@bk.ru'); ?>" class="text-link">enerenergo_stroy48@bk.ru</a>
             </div>
-
         </div>
     </div>
 </footer>
