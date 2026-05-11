@@ -25,15 +25,34 @@
                 <a href="<?php echo esc_url( home_url('/') ); ?>" class="header__logo">
                     <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/logo.svg'); ?>" alt="">
                 </a>
-                <?php
-                wp_nav_menu([
-                    'theme_location' => 'header_menu',
-                    'container' => 'nav',
-                    'container_class' => 'header__nav',
-                    'menu_class' => 'header__menu',
-                    'fallback_cb' => false,
-                ]);
-                ?>
+                <nav class="header__nav" aria-label="Основная навигация">
+                    <?php
+                    wp_nav_menu([
+                        'theme_location' => 'header_menu',
+                        'container' => false,
+                        'menu_class' => 'header__menu',
+                        'fallback_cb' => false,
+                    ]);
+                    ?>
+
+                    <div class="header__mobile-extra">
+                        <?php if ($phone) : ?>
+                            <a class="header__mobile-link" href="tel:<?php echo esc_attr($phone_href); ?>">
+                                <?php echo esc_html($phone); ?>
+                            </a>
+                        <?php endif; ?>
+
+                        <?php if ($email) : ?>
+                            <a class="header__mobile-link" href="mailto:<?php echo esc_attr($email); ?>">
+                                <?php echo esc_html($email); ?>
+                            </a>
+                        <?php endif; ?>
+
+                        <a href="<?php echo esc_url(home_url('/')); ?>" class="header__mobile-logo">
+                            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/mobileLogo.svg'); ?>" alt="Логотип Энергострой">
+                        </a>
+                    </div>
+                </nav>
 
                 <div class="header__contacts">
                     <?php if ($phone) : ?>
@@ -47,8 +66,6 @@
                         </a>
                     <?php endif; ?>
                 </div>
-
-                <div class="header__overlay" aria-hidden="true"></div>
 
                 <button class="header__burger" type="button" aria-label="Open menu" aria-expanded="false">
                     <span class="header__burger-icon" aria-hidden="true"></span>
