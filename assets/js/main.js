@@ -33,9 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
 //menu
 document.addEventListener('DOMContentLoaded', () => {
   const burger = document.querySelector('.header__burger');
-  const burgerText = document.querySelector('.header__burger-text');
   const nav = document.querySelector('.header__nav');
-  const overlay = document.querySelector('.header__overlay');
 
   if (!burger || !nav) return;
 
@@ -43,17 +41,9 @@ document.addEventListener('DOMContentLoaded', () => {
     burger.classList.toggle('is-active', isOpen);
     nav.classList.toggle('is-active', isOpen);
 
-    if (overlay) {
-      overlay.classList.toggle('is-active', isOpen);
-    }
-
     document.body.classList.toggle('menu-open', isOpen);
     burger.setAttribute('aria-expanded', String(isOpen));
     burger.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
-
-    if (burgerText) {
-      burgerText.textContent = isOpen ? 'Close' : 'Menu';
-    }
   };
 
   setMenuState(false);
@@ -63,16 +53,12 @@ document.addEventListener('DOMContentLoaded', () => {
     setMenuState(isOpen);
   });
 
-  if (overlay) {
-    overlay.addEventListener('click', () => setMenuState(false));
-  }
-
   document.querySelectorAll('.header__menu a').forEach((link) => {
     link.addEventListener('click', () => setMenuState(false));
   });
 
   window.addEventListener('resize', () => {
-    if (window.innerWidth > 768) {
+    if (window.innerWidth > 899) {
       setMenuState(false);
     }
   });
@@ -83,4 +69,3 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
-
