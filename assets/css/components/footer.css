@@ -4,7 +4,7 @@
 }
 
 .footer a:hover {
-  color: #808080;
+  color: #FFAE34;
 }
 
 .footer {
@@ -52,7 +52,7 @@
   font-size: var(--size-smal);
 }
 
-@media (max-width: 899px) {
+@media (max-width: 900px) {
   .footer__inner {
     justify-content: center;
   }

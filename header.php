@@ -1,17 +1,17 @@
 ﻿<!DOCTYPE html>
-<html lang="ru">
+<html <?php language_attributes(); ?>>
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="ЭНЕРГОСТРОЙ - Полный спектр услуг в строительстве электроэнергетической инфраструктуры" />
     <meta property="og:description" content="ЭНЕРГОСТРОЙ - Энергия в каждом решении, надежность в каждом проекте" />
-    <title>ЭНЕРГОСТРОЙ</title>
 
     <?php wp_head();  ?>
 </head>
 
-<body>
+<body <?php body_class(); ?>>
+    <?php wp_body_open(); ?>
     <?php
     $phone = get_theme_mod('energostroy_phone', '+7 (4742) 71-01-56');
     $email = get_theme_mod('energostroy_email', 'energo_stroy48@bk.ru');
