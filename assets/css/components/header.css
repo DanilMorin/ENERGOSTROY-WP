@@ -136,7 +136,6 @@
   }
   .header__menu a {
     color: #141411;
-    font-size: 44px;
     line-height: 1.2;
     font-family: var(--font-family);
   }
@@ -149,7 +148,6 @@
   }
   .header__mobile-extra .header__mobile-link {
     color: #141411 !important;
-    font-size: 42px;
     line-height: 1.12;
     font-family: var(--font-family);
   }
@@ -158,7 +156,7 @@
     margin-top: 8px;
   }
   .header__mobile-logo img {
-    width: 148px;
+    width: 120px;
     height: auto;
     display: block;
   }
