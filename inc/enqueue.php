@@ -1,34 +1,39 @@
 <?php
 function energostroy_enqueue_scripts()
 {
-    $version = '1.0.0';
+    //версионизация CSS-файлов 
+    $theme_version = wp_get_theme()->get('Version');
+    $asset_version = static function ($relative_path) use ($theme_version) {
+        $absolute_path = get_template_directory() . $relative_path;
+        return file_exists($absolute_path) ? filemtime($absolute_path) : $theme_version;
+    };
 
     wp_enqueue_style(
         'main-style',
         get_template_directory_uri() . '/assets/css/main.css',
         [],
-        $version
+        $asset_version('/assets/css/main.css')
     );
 
     wp_enqueue_style(
         'reset-style',
         get_template_directory_uri() . '/assets/css/reset.css',
         [],
-        $version
+        $asset_version('/assets/css/reset.css')
     );
 
     wp_enqueue_style(
         'footer-style',
         get_template_directory_uri() . '/assets/css/components/footer.css',
         [],
-        $version
+        $asset_version('/assets/css/components/footer.css')
     );
 
     wp_enqueue_style(
         'header-style',
         get_template_directory_uri() . '/assets/css/components/header.css',
         [],
-        $version
+        $asset_version('/assets/css/components/header.css')
     );
 
     if (is_front_page() || is_page_template('front-page.php')) { // если страница front-page, то подгружаются только её стили
@@ -36,7 +41,7 @@ function energostroy_enqueue_scripts()
             'front-page-style',
             get_template_directory_uri() . '/assets/css/pages/front-page/front-page.css',
             ['main-style'],
-            $version
+            $asset_version('/assets/css/pages/front-page/front-page.css')
         );
     }
 
@@ -58,7 +63,7 @@ function energostroy_enqueue_scripts()
         'splide-js',
         get_template_directory_uri() . '/assets/libs/splide/splide.min.js',
         [],
-        '4.1.4',
+        $asset_version('/assets/libs/splide/splide.min.js'),
         true
     );
 
@@ -66,7 +71,7 @@ function energostroy_enqueue_scripts()
         'energostroy-script',
         get_template_directory_uri() . '/assets/js/main.js',
         ['splide-js'],
-        $version,
+        $asset_version('/assets/js/main.js'),
         true
     );
 }

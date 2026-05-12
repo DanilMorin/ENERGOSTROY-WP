@@ -28,6 +28,24 @@ main .hero__button {
   color: var(--color-button);
   font-size: clamp(14px, 1.5vw, 20px);
   font-weight: 700;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background-color 0.22s ease, color 0.22s ease, border-color 0.22s ease, transform 0.22s ease, box-shadow 0.22s ease;
+}
+main .hero__button:hover {
+  background-color: #FFAE34;
+  color: #141411;
+  border-color: #FFAE34;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(255, 174, 52, 0.28);
+}
+main .hero__button:focus-visible {
+  outline: 2px solid #FFAE34;
+  outline-offset: 2px;
+}
+main .hero__button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 10px rgba(255, 174, 52, 0.22);
 }
 main .service {
   margin-bottom: clamp(20px, 4vw, 80px);
@@ -102,7 +120,8 @@ main .about-work .cards-wrapper .card {
   border-radius: 15px;
   max-width: 320px;
   width: 100%;
-  height: 320px;
+  min-height: 320px;
+  height: auto;
   background-size: cover;
   backdrop-filter: blur(60px);
   box-shadow: inset 0 0 1px 0 #a4a4a4;
@@ -196,7 +215,11 @@ main .contacts .contacts-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: clamp(10px, 1.5vw, 20px);
+}
+main .contacts .contacts-wrapper__item {
+  min-width: 260px;
 }
 main .contacts .contacts-wrapper .text-link {
   text-decoration: none;
@@ -211,7 +234,8 @@ main .contacts .contacts-wrapper .text-link {
     flex: 0 1 250px;
     max-width: 250px;
     width: 100%;
-    height: 250px;
+    min-height: 250px;
+    height: auto;
     padding: 28px 18px 20px 22px;
   }
   main .about-work .cards-wrapper .card__image {
@@ -233,7 +257,7 @@ main .contacts .contacts-wrapper .text-link {
     line-height: 1.35;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 480px) {
   main .hero {
     height: 100%;
     background-image: url("../../../img/mainMob.png");
@@ -283,7 +307,8 @@ main .contacts .contacts-wrapper .text-link {
     flex: none;
     max-width: 310px;
     width: 100%;
-    height: 200px;
+    min-height: 200px;
+    height: auto;
     padding: 24px 20px 20px;
   }
   main .about-work .cards-wrapper .card__image {
@@ -305,8 +330,9 @@ main .contacts .contacts-wrapper .text-link {
     line-height: 1.3;
   }
   main .about a {
-    max-width: 100px;
+    max-width: 100%;
     width: 100%;
+    min-height: 48px;
   }
   main .contacts .contacts-wrapper {
     margin-top: 15px;

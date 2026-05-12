@@ -1,6 +1,9 @@
 <?php
 //настройки темы
 function energostroy_theme_setup() {
+    // поддержка динамических заголовков title
+    add_theme_support( 'title-tag' );
+
     // Поддержка миниатюр
     add_theme_support( 'post-thumbnails' );
 

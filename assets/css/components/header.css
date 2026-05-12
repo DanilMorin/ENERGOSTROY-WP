@@ -4,21 +4,33 @@
 }
 
 .header {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 100;
   background: #141411;
-  padding: 24px 0;
+  padding: 18px 0;
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+  will-change: transform;
+}
+.header.header--scroll-hidden {
+  transform: translateY(-100%);
+}
+.header.header--scroll-visible {
+  transform: translateY(0);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.22);
 }
 .header__inner {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: clamp(30px, 5vw, 100px);
+  gap: clamp(18px, 3vw, 56px);
 }
 .header__logo {
   display: block;
-  max-width: 160px;
+  max-width: 150px;
   width: 100%;
 }
 .header__logo img {
@@ -32,7 +44,7 @@
 .header__menu {
   display: flex;
   align-items: center;
-  gap: clamp(30px, 5vw, 90px);
+  gap: clamp(16px, 2.6vw, 44px);
   margin: 0;
   padding: 0;
   list-style: none;
@@ -45,7 +57,7 @@
   transition: color 0.2s ease;
 }
 .header__menu a:hover {
-  color: #e0b992;
+  color: #FFAE34;
 }
 .header__contacts {
   display: flex;
@@ -59,7 +71,7 @@
   transition: color 0.2s ease;
 }
 .header__contact-link:hover {
-  color: #e0b992;
+  color: #FFAE34;
   text-decoration: underline;
 }
 .header__burger {
@@ -94,7 +106,7 @@
   display: none;
 }
 
-@media (max-width: 899px) {
+@media (max-width: 900px) {
   .header__inner {
     display: flex;
     flex-direction: row;
@@ -112,6 +124,8 @@
     right: 0;
     width: min(86vw, 360px);
     height: 100dvh;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
     padding: 132px 42px 38px;
     background: #ececec;
     transform: translateX(100%);
@@ -120,6 +134,7 @@
     pointer-events: none;
     display: flex;
     flex-direction: column;
+    align-items: center;
     transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.25s ease, visibility 0.25s ease;
     z-index: 40;
   }
@@ -131,7 +146,8 @@
   }
   .header__menu {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
     gap: 34px;
   }
   .header__menu a {
@@ -142,7 +158,8 @@
   .header__mobile-extra {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
     gap: 32px;
     padding-top: 56px;
   }
@@ -179,7 +196,7 @@
     height: 48px;
   }
 }
-@media (max-width: 680px) {
+@media (max-width: 640px) {
   .header__nav {
     padding: 86px 24px 26px;
   }
