@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: projects
+Template Name: Projects
 */
 ?>
 
@@ -10,12 +10,30 @@ Template Name: projects
     <section class="projects">
         <div class="container">
             <header class="projects__header">
-                <h1 class="projects__title">Реализованные проекты</h1>
+                <h1 class="text-title-second">Реализованные проекты</h1>
             </header>
 
-            <?php if (have_posts()) : ?>
+            <?php
+            /**
+             * Получаем текущую страницу пагинации.
+             * Это нужно, если проектов станет много.
+             */
+            $paged = get_query_var('paged') ? get_query_var('paged') : 1;
+
+            /**
+             * Делаем отдельный запрос только по проектам.
+             */
+            $projects_query = new WP_Query([
+                'post_type' => 'project',
+                'post_status' => 'publish',
+                'posts_per_page' => 6,
+                'paged' => $paged,
+            ]);
+            ?>
+
+            <?php if ($projects_query->have_posts()) : ?>
                 <div class="projects__list">
-                    <?php while (have_posts()) : the_post(); ?>
+                    <?php while ($projects_query->have_posts()) : $projects_query->the_post(); ?>
                         <article class="project-card">
                             <a class="project-card__media" href="<?php the_permalink(); ?>"> <!-- Ссылка на страницу проекта -->
                                 <?php if (has_post_thumbnail()) : ?> <!-- Проверяем, есть ли миниатюра -->
@@ -52,17 +70,22 @@ Template Name: projects
                 </div>
 
                 <div class="projects__pagination"> <!-- Пагинация для навигации между страницами проектов -->
-                    <?php // Выводим пагинацию с кастомными текстами для кнопок "Назад" и "Вперёд"
-                    the_posts_pagination([ 
-                        'prev_text' => 'Назад',
-                        'next_text' => 'Вперёд',
-                    ]);
-                    ?>
+                    <div class="projects__pagination">
+                        <?php
+                        echo paginate_links([
+                            'total' => $projects_query->max_num_pages,
+                            'current' => $paged,
+                            'prev_text' => 'Назад',
+                            'next_text' => 'Вперёд',
+                        ]);
+                        ?>
+                    </div>
+
+                    <?php wp_reset_postdata(); ?> <!-- Сбрасываем глобальную переменную поста после нашего кастомного запроса -->
+                <?php else : ?>
+                    <p class="projects__empty">Проекты пока не добавлены.</p> <!-- Сообщение, если проектов нет -->
+                <?php endif; ?>
                 </div>
-            <?php else : ?>
-                <p class="projects__empty">Проекты пока не добавлены.</p> <!-- Сообщение, если проектов нет -->
-            <?php endif; ?>
-        </div>
     </section>
 </main>
 

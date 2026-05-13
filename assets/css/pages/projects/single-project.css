@@ -1,0 +1,99 @@
+.single-project__hero {
+  padding: 80px 0 10px;
+}
+.single-project__back {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #fff;
+  font-family: var(--font-family);
+}
+.single-project__back:hover {
+  color: #ffae34;
+}
+.single-project__title {
+  max-width: 960px;
+  margin: 0 0 20px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: clamp(24px, 3vw, 32px);
+  color: #fff;
+}
+.single-project__main-image {
+  max-width: 1000px;
+  max-height: 620px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+.single-project__image {
+  width: 100%;
+  height: auto;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.single-project__content-section {
+  padding: 10px 0 20px;
+}
+.single-project__content {
+  max-width: 960px;
+}
+.single-project__content p {
+  margin: 0 0 24px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: clamp(18px, 1.5vw, 24px);
+  color: #fff;
+}
+.single-project__content h2,
+.single-project__content h3 {
+  margin: 56px 0 24px;
+}
+.single-project__content ul,
+.single-project__content ol {
+  margin: 0 0 32px;
+  padding-left: 24px;
+}
+.single-project__content li {
+  margin-bottom: 10px;
+}
+.single-project__content .wp-block-gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: 56px 0;
+}
+.single-project__content .wp-block-gallery .wp-block-image {
+  flex: 1 1 280px;
+  max-width: 100%;
+  margin: 0;
+}
+.single-project__content .wp-block-gallery .wp-block-image img {
+  width: 100%;
+  height: 260px;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+  .single-project__hero {
+    padding: 10px 0 10px;
+  }
+  .single-project__title {
+    margin-bottom: 0;
+  }
+  .single-project__content-section {
+    padding: 30px 0 100px;
+  }
+  .single-project__content .wp-block-gallery {
+    margin: 36px 0;
+  }
+}/*# sourceMappingURL=single-project.css.map */
