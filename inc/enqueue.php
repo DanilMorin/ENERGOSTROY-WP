@@ -45,6 +45,24 @@ function energostroy_enqueue_scripts()
         );
     }
 
+    if(is_page_template('page-projects.php')) { // если страница projects, то подгружаются только её стили
+        wp_enqueue_style(
+            'projects-page-style',
+            get_template_directory_uri() . '/assets/css/pages/projects/page-projects.css',
+            ['main-style'],
+            $asset_version('/assets/css/pages/projects/page-projects.css')
+        );
+    }
+
+    if(is_singular('project')) { // если это страница проекта, то подгружаются только её стили
+        wp_enqueue_style(
+            'single-project-style',
+            get_template_directory_uri() . '/assets/css/pages/projects/single-project.css',
+            ['main-style'],
+            $asset_version('/assets/css/pages/projects/single-project.css')
+        );
+    }
+
     wp_enqueue_style(
         'google-fonts',
         'https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap',
