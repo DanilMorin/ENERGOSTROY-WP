@@ -77,7 +77,27 @@
             margin-bottom: 10px;
         }
 
-          .wp-block-gallery {
+        .wp-block-image {
+            margin: 32px 0;
+        }
+
+        .wp-block-gallery.has-nested-images figure.wp-block-image {
+            display: inline-grid;
+            flex-direction: column;
+            justify-content: start;
+            flex-grow: 1;
+            max-width: 100%;
+            position: relative;
+        }
+
+        .wp-block-image img {
+            width: auto;
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .wp-block-gallery {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;

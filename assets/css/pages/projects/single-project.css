@@ -60,6 +60,23 @@
 .single-project__content li {
   margin-bottom: 10px;
 }
+.single-project__content .wp-block-image {
+  margin: 32px 0;
+}
+.single-project__content .wp-block-gallery.has-nested-images figure.wp-block-image {
+  display: inline-grid;
+  flex-direction: column;
+  justify-content: start;
+  flex-grow: 1;
+  max-width: 100%;
+  position: relative;
+}
+.single-project__content .wp-block-image img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 .single-project__content .wp-block-gallery {
   display: flex;
   flex-direction: row;

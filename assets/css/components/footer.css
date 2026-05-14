@@ -34,12 +34,21 @@
 }
 .footer__column--center {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  gap: 6px;
+  text-align: center;
 }
-.footer__column--center a {
+.footer__column--center .footer__brand {
   font-family: var(--font-family);
   font-weight: var(--weight-menu);
   font-size: clamp(20px, 3vw, 40px);
+}
+.footer__column--center .footer__privacy-link {
+  font-family: var(--font-family);
+  font-weight: var(--weight-base);
+  font-size: clamp(14px, 1.2vw, 18px);
 }
 .footer__column--contacts {
   display: flex;
