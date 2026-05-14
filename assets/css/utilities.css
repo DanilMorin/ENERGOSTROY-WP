@@ -39,6 +39,9 @@
     font-weight: var(--weight-title);
     font-size: var(--size-title-h2);
     color: var(--color-primary);
+    hyphens: none;
+    word-break: normal;
+    overflow-wrap: normal;
 }
 
 .text-menu {
