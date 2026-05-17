@@ -1,7 +1,7 @@
 <?php
 function energostroy_enqueue_scripts()
 {
-    //РІРµСЂСЃРёРѕРЅРёР·Р°С†РёСЏ CSS-С„Р°Р№Р»РѕРІ 
+  
     $theme_version = wp_get_theme()->get('Version');
     $asset_version = static function ($relative_path) use ($theme_version) {
         $absolute_path = get_template_directory() . $relative_path;
@@ -36,16 +36,16 @@ function energostroy_enqueue_scripts()
         $asset_version('/assets/css/components/header.css')
     );
 
-    if (is_front_page() || is_page_template('front-page.php')) { // РµСЃР»Рё СЃС‚СЂР°РЅРёС†Р° front-page, С‚Рѕ РїРѕРґРіСЂСѓР¶Р°СЋС‚СЃСЏ С‚РѕР»СЊРєРѕ РµС‘ СЃС‚РёР»Рё
+    if (is_front_page() || is_page_template('front-page.php')) { 
         wp_enqueue_style(
-            'front-page-style',
+            'front-page-style', 
             get_template_directory_uri() . '/assets/css/pages/front-page/front-page.css',
             ['main-style'],
             $asset_version('/assets/css/pages/front-page/front-page.css')
         );
     }
 
-    if(is_page_template('page-projects.php')) { // РµСЃР»Рё СЃС‚СЂР°РЅРёС†Р° projects, С‚Рѕ РїРѕРґРіСЂСѓР¶Р°СЋС‚СЃСЏ С‚РѕР»СЊРєРѕ РµС‘ СЃС‚РёР»Рё
+    if(is_page_template('page-projects.php')) { 
         wp_enqueue_style(
             'projects-page-style',
             get_template_directory_uri() . '/assets/css/pages/projects/page-projects.css',
@@ -54,7 +54,7 @@ function energostroy_enqueue_scripts()
         );
     }
 
-    if (is_singular('project') || is_page_template('page-privacy.php')) { // РµСЃР»Рё СЌС‚Рѕ СЃС‚СЂР°РЅРёС†Р° РїСЂРѕРµРєС‚Р°, С‚Рѕ РїРѕРґРіСЂСѓР¶Р°СЋС‚СЃСЏ С‚РѕР»СЊРєРѕ РµС‘ СЃС‚РёР»Рё
+    if (is_singular('project') || is_page_template('page-privacy.php')) { 
         wp_enqueue_style(
             'single-project-style',
             get_template_directory_uri() . '/assets/css/pages/projects/single-project.css',
@@ -62,7 +62,6 @@ function energostroy_enqueue_scripts()
             $asset_version('/assets/css/pages/projects/single-project.css')
         );
     }
-    //РїРѕРґРєР»СЋС‡РµРЅРёРµ Р±РёР±Р»РёРѕС‚РµРєРё splide
     wp_enqueue_style(
         'splide-css',
         get_template_directory_uri() . '/assets/libs/splide/splide.min.css',
