@@ -7,7 +7,7 @@
                 <section class="single-project__hero">
                     <div class="container">
                         <a class="single-project__back" href="<?php echo esc_url(home_url('/projects/')); ?>">
-                         < Все проекты
+                         &lt; Все проекты
                         </a>
 
                         <h1 class="single-project__title">

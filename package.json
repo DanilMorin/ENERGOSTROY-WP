@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lint:php": "php -l functions.php && php -l header.php && php -l footer.php && php -l front-page.php && php -l page-projects.php && php -l page-privacy.php && php -l inc/enqueue.php && php -l inc/theme-setup.php && php -l inc/customizer.php && php -l inc/acf-fields.php",
+    "lint:php": "php -l functions.php && php -l header.php && php -l footer.php && php -l front-page.php && php -l page-projects.php && php -l page-privacy.php && php -l single-project.php && php -l inc/enqueue.php && php -l inc/theme-setup.php && php -l inc/customizer.php && php -l inc/acf-fields.php && php -l inc/post-types.php",
     "test": "npm run lint:php",
     "sync": "browser-sync start --proxy \"localhost/energostroy\" --files \"**/*.php, assets/css/**/*.css, assets/js/**/*.js\""
   },
